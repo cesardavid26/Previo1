@@ -2,9 +2,9 @@
 	color: white;
 }
 #zam{
-	font-family: 'Lexend Giga', sans-serif;
+	font-family: 'Mukta', sans-serif;
 	color: white;
-	font-size: 28px;
+	font-size: 35px;
 }
 #contacto:hover, #registrar:hover, #login:hover, #zam:hover{
 	background-color:#0b5a8f;
@@ -18,4 +18,16 @@
 .card-img-top{
 	width: 90%;
 	height: 50%;
+}
+.carousel-item{
+    height: 360px;
+} 
+.carousel-item img{
+    height: 360px;
+}
+h3{
+	font-family: 'Pacifico', cursive;
+}
+#nav{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 }
