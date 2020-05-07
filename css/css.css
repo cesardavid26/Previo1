@@ -7,7 +7,7 @@
 	font-size: 28px;
 }
 #contacto:hover, #registrar:hover, #login:hover, #zam:hover{
-	background-color:#000a12;
+	background-color:#0b5a8f;
 	border-color: white;
 	transition:all .5s ease-in-out;
 }
@@ -15,7 +15,7 @@
 	border-radius: 10px;
 	color: white;
 }
-img{
+.card-img-top{
 	width: 90%;
-	height: 40%;
+	height: 50%;
 }
