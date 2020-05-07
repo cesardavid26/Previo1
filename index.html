@@ -21,9 +21,9 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
     	<div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#" target="_blank" data-toggle="modal" data-target="#contacto">Contacto <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link active" id="login" href="login.html">Iniciar Sesión <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link active" id="registrar" href="registrar.html">Registrarse <span class="sr-only">(current)</span></a>
+      <a class="btn btn-primary" href="#" target="_blank" data-toggle="modal" data-target="#exampleModalScrollable4">Contacto <span class="sr-only">(current)</span></a>
+      <a class="btn btn-primary" href="#" target="_blank" data-toggle="modal" data-target="#exampleModalScrollable6">Iniciar Sesión <span class="sr-only">(current)</span></a>
+      <a class="btn btn-primary" href="#" target="_blank" data-toggle="modal" data-target="#exampleModalScrollable5">Registrarse <span class="sr-only">(current)</span></a>
       
       </div>
     </div>
@@ -204,34 +204,107 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Contacto</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="post">
           <div class="form-group">
             <label  class="col-form-label">Nombre Completo:</label>
-            <input type="text" class="form-control" id="recipient-name" placeholder="Nombre y Apellidos">
+            <input for="recipient-name" type="text" class="form-control" id="recipient-name" placeholder="Nombre y Apellidos" required="" >
           </div>
           <div class="form-group">
             <label  class="col-form-label">Email:</label>
-            <input type="email" class="form-control" id="recipient-name" placeholder="Correo electronico">
+            <input type="email" class="form-control" id="recipient-name" placeholder="Correo electronico" required="">
           </div>
           <div class="form-group">
             <label for="message-text" class="col-form-label">Mensaje:</label>
-            <textarea class="form-control" id="message-text" placeholder="No omitas detalle para que recibas la mejor orientación. (Máximo 500 caracteres)."></textarea>
+            <textarea class="form-control" id="message-text" placeholder="No omitas detalle para que recibas la mejor orientación. (Máximo 500 caracteres)." required=""></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Volver</button>
-        <button type="button" class="btn btn-primary" aria-label="Close" data-dismiss="modal"><span class="material-icons">add_shopping_cart</span>Añadir al carro</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+          <div class="form-group">
+            <label  class="col-form-label">Nombre Completo:</label>
+            <input for="recipient-name" type="text" class="form-control" id="recipient-name" placeholder="Nombre y Apellidos" required="">
+          </div>
+          <div class="form-group">
+            <label  class="col-form-label">Dirección:</label>
+            <input for="recipient-name" type="text" class="form-control" id="recipient-name" placeholder="Av 17 N 3-35" required="">
+          </div>
+          <div class="form-group">
+            <label  class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="Correo electronico" required="">
+          </div>
+          <div class="form-group">
+            <label  class="col-form-label">Telefono:</label>
+            <input for="recipient-name" type="text" class="form-control" id="recipient-name" placeholder="3133724696" required="">
+          </div>
+          <div class="form-group">
+            <label  class="col-form-label">Contraseña:</label>
+            <input for="recipient-name" type="password" class="form-control" id="recipient-name" placeholder="Contraseña" required=""><br>
+            <input for="recipient-name" type="password" class="form-control" id="recipient-name" placeholder="Confirme contraseña" required="">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Volver</button>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+        
+          <div class="form-group">
+            <label  class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="Correo electronico" required="">
+          </div>
+       
+          <div class="form-group">
+            <label  class="col-form-label">Contraseña:</label>
+            <input for="recipient-name" type="password" class="form-control" id="recipient-name" placeholder="Contraseña" required="">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Volver</button>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
       </div>
     </div>
   </div>
